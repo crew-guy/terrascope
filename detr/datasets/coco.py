@@ -145,7 +145,8 @@ def make_coco_transforms(image_set):
 
 
 def build(image_set, args):
-    root = Path(args.coco_path)
+    # TODO : HARDCODED PATH
+    root = Path("/Users/ankitsanghvi/Desktop/terrascope/coco")
     assert root.exists(), f'provided COCO path {root} does not exist'
     mode = 'instances'
     PATHS = {
