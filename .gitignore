@@ -16,5 +16,3 @@ detr/*.pkl
 detr/**/.mypy_cache/*
 detr/.mypy_cache/*
 detr/not_tracked_dir/
-
-.vscode
