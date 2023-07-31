@@ -91,11 +91,6 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
 
         outputs = model(samples)
         tensors, mask  = samples.decompose()
-        with open('logs.txt', 'w') as f:
-            # Write the variable to the file
-            f.write(str(tensors.tolist()))
-            f.write("\n")
-            f.write(str(tensors.tolist()))
         loss_dict = criterion(outputs, targets)
         weight_dict = criterion.weight_dict
 
